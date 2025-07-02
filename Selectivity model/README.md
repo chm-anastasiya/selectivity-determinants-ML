@@ -42,3 +42,11 @@ Output structure
 
 3. figs/UMAP_selectivity/
 * UMAP_<pair>.png
+
+Quick start
+-----------
+
+1. Run **`common_smiles.ipynb`** to generate the master ligand list.  
+2. Run **`selectivity_models.ipynb`** to train pair-wise selectivity
+   classifiers.  
+3. Run **`UMAP_selevcitvity.ipynb`** to visualise selectivity clusters.
