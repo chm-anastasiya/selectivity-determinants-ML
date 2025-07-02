@@ -1,16 +1,20 @@
 # Selectivity-Determinants-ML
-Machine-learning project for analysing ligand selectivity using ChEMBL data
+Machine-learning project for analysing ligand selectivity with ChEMBL data
 
-=======================================================
+## 5-HT Ligand Activity, Affinity and Selectivity Pipeline
 
-This repository contains a complete, notebook-based workflow for predicting
-- *binary activity*,
-- *binding affinity (pKi)* and
-- *receptor selectivity (ΔpKi)*
+This repository provides a notebook-based workflow that predicts  
 
-of ligands across six serotonin receptors
+* **binary activity**,  
+* **binding affinity** (*p*Ki), and  
+* **receptor selectivity** (Δ*p*Ki)  
+
+for ligands across six serotonin receptors  
 (5-HT1A, 5-HT2A, 5-HT2B, 5-HT5A, 5-HT6, 5-HT7).
 
+---
+
+## Folder structure
 Folder Structure
 ----------------
 0. Cleaned_data/ (input CSV files per receptor)
