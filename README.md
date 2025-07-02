@@ -22,7 +22,7 @@ Folder Structure
 
 | Folder | Main Notebooks | Key Outputs |
 |--------|----------------|-------------|
-| **Cleaned_data** | – | `cleaned_5HT*.csv` | - |
+| **Cleaned_data** | – | `cleaned_5HT*.csv` |
 | **Binary_activity_models** | `binary_activity_all_receptors.ipynb`<br>`UMAP_activity_classification_all_receptors.ipynb` | `results/<receptor>/` ROC/PR curves, feature lists, `model.pkl`<br>`figs/UMAP_<receptor>.png` |
 | **pKi_regression_model** | `pKi_regression_all_receptors.ipynb` | `results/<receptor>/` R² / RMSE / MAE, scatter & residual plots, `model.pkl` |
 | **Selectivity_model** | `common_smiles.ipynb`<br>`selectivity_models.ipynb`<br>`UMAP_selevcitvity.ipynb` | `results/selectivity/` Δ*p*Ki matrix & heat-maps<br>`results/selectivity_models/` pair-wise classifiers<br>`figs/UMAP_selectivity/` selectivity clusters |
