@@ -29,8 +29,8 @@ Output
 ------
 
 results/prediction/
-* predictions.csv # P(active), pKi, ΔpKi, selectivity class
-*  prediction_overview.png # quick visual summary
+* predictions.csv (P(active), pKi, ΔpKi, selectivity class)
+*  prediction_overview.png (quick visual summary)
 
 Quick start
 -----------
