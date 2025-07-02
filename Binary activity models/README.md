@@ -42,3 +42,4 @@ Quick start
    to the folder with the cleaned CSV files and run all cells.  
 2. Open **`UMAP_activity_classification_all_receptors.ipynb`** and run all
    cells to generate the UMAP plots.
+
