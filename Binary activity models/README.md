@@ -19,7 +19,7 @@ Notebooks
 
 Input
 -----
-Cleaned CSV files for each receptor  
+Cleaned CSV files for each receptor
 (`cleaned_5HT1A.csv`, `cleaned_5HT2A.csv`, …) containing SMILES, Ki and
 RDKit descriptors.
 
