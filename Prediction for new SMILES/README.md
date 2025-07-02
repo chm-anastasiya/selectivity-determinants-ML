@@ -2,7 +2,7 @@ Prediction for New SMILES
 ===================================
 
 This directory contains a Jupyter notebook that **applies all trained
-models—binary activity classifiers, pKi regressors and pair-wise
+models: binary activity classifiers, pKi regressors and pair-wise
 selectivity classifiers** to unseen molecules provided as SMILES strings.
 
 Notebook
@@ -21,16 +21,21 @@ Notebook
 
 Input
 -----
-
-* `input_smiles.csv` – a one-column file with SMILES strings
-  (or replace with your own list in the notebook cell).
+* **`input_smiles.csv`** (or any CSV you pass): one column named `Smiles`  
+  The example file shipped here is `5ht2c.csv`.
+  
 
 Output
 ------
 
-results/prediction/
-* predictions.csv (P(active), pKi, ΔpKi, selectivity class)
-*  prediction_overview.png (quick visual summary)
+| File | Description |
+|------|-------------|
+| `new_predicted_Ki.csv` | pKi → Ki (nM) predictions for every receptor |
+| `new_predicted_Pactive.csv` | probability of activity for every receptor |
+| `new_predicted_selectivity.csv` | ΔpKi matrix for all receptor pairs |
+
+All files are saved in the current working directory.
+
 
 Quick start
 -----------
@@ -38,4 +43,4 @@ Quick start
 1. Place your SMILES in `input_smiles.csv`.  
 2. Open **`prediction_P(active)_Ki_ΔpKi.ipynb`**, check the path to the
    trained models (defaults to `results/` from earlier steps).  
-3. Run all cells to obtain `predictions.csv` and the overview plot.
+3. Run all cells.
