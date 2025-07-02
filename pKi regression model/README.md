@@ -1,5 +1,4 @@
-# pKi regression models
-pKi Regression Models (5-HT Receptor Panel)
+pKi Regression Models 
 ==========================================
 
 This directory provides a Jupyter notebook that builds **regression models
@@ -27,5 +26,9 @@ RDKit descriptors.
 
 Output structure
 ----------------
-
-
+results/<receptor>/
+├── true_vs_pred_scatter.png
+├── residuals_hist.png
+├── metrics.json # R2, RMSE, MAE
+├── feature_importances.csv
+└── model.pkl
