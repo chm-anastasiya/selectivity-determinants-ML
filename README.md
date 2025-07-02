@@ -7,6 +7,7 @@ This repository contains a complete, notebook-based workflow for predicting
 - *binary activity*,
 - *binding affinity (pKi)* and
 - *receptor selectivity (ΔpKi)*
+
 of ligands across six serotonin receptors
 (5-HT1A, 5-HT2A, 5-HT2B, 5-HT5A, 5-HT6, 5-HT7).
 
