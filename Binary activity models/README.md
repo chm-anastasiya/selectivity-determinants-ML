@@ -34,3 +34,11 @@ results/<receptor>/
 
 figs/
 - UMAP_<receptor>.png
+
+Quick start
+-----------
+
+1. Open **`binary_activity_all_receptors.ipynb`**, set `CSV_DIR`
+   to the folder with the cleaned CSV files and run all cells.  
+2. Open **`UMAP_activity_classification_all_receptors.ipynb`** and run all
+   cells to generate the UMAP plots.
