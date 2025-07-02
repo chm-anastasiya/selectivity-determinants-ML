@@ -10,12 +10,10 @@ Notebook
 
 **`pKi_regression_all_receptors.ipynb`**
 
-* Features: ECFP4 fingerprints (radius = 2, 1024 bits) + RDKit descriptors  
-* Target: pKi = –log₁₀(Ki [M])  
-* Model: LightGBM regressor, 5-fold cross-validation, Optuna
-  hyper-parameter search 
-* Outputs per receptor: R², RMSE, MAE, scatter/residual plots,
-  ranked feature list, `model.pkl`.
+* trains LightGBM regressors to predict pKi (–log₁₀ Ki);  
+* uses ECFP4 fingerprints + RDKit descriptors;  
+* saves R² / RMSE / MAE, scatter & residual plots, feature rankings and
+`model.pkl` files under results/<receptor>/.
 
 Input data
 ----------
@@ -32,4 +30,4 @@ results/<receptor>/
 - residuals_hist.png
 - metrics.json # R2, RMSE, MAE
 - feature_importances.csv
--  model.pkl
+- model.pkl
