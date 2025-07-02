@@ -1,18 +1,19 @@
-Binary Activity Models
+Binary Activity Models 
+==========================================
 
-This directory contains two Jupyter notebooks that train and analyse binary (active / inactive) classification models for six serotonin receptors (5-HT1A, 5-HT2A, 5-HT2B, 5-HT5A, 5-HT6, 5-HT7).
+This directory contains two Jupyter notebooks that **train and analyse binary (active / inactive) classification models** for six serotonin receptors (5-HT1A, 5-HT2A, 5-HT2B, 5-HT5A, 5-HT6, 5-HT7).
 
 Notebooks
 ---------
-1. binary_activity_all_receptors.ipynb
-- trains LightGBM classifiers (active = Ki < 1000 nM);
-- uses ECFP4 fingerprints + RDKit descriptors;
-- saves metrics, curves, feature rankings and model.pkl files under results/<receptor>/.
+1. **`binary_activity_all_receptors.ipynb`**
+* trains LightGBM classifiers (active = Ki < 1000 nM);
+* uses ECFP4 fingerprints + RDKit descriptors;
+* saves metrics, curves, feature rankings and model.pkl files under results/<receptor>/.
 
-2. UMAP_activity_classification_all_receptors.ipynb
-- projects the same feature space with UMAP;
-- produces 2-D plots coloured by activity class;
-- files are written to figs/UMAP_<receptor>.png.
+2. **`UMAP_activity_classification_all_receptors.ipynb`**
+* projects the same feature space with UMAP;
+* produces 2-D plots coloured by activity class;
+* files are written to figs/UMAP_<receptor>.png.
 
 
 
@@ -25,11 +26,11 @@ RDKit descriptors.
 Output
 ------
 results/<receptor>/
-├── roc_curve.png
-├── pr_curve.png
-├── confusion_matrix.png
-├── top_features.csv
-└── model.pkl
+- roc_curve.png
+- pr_curve.png
+- confusion_matrix.png
+- top_features.csv
+- model.pkl
 
 figs/
-└── UMAP_<receptor>.png
+- UMAP_<receptor>.png
