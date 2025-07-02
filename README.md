@@ -13,11 +13,11 @@ of ligands across six serotonin receptors
 
 Folder Structure
 ----------------
-0_Cleaned_data/ (input CSV files per receptor)
-1_Binary_activity_models/ (binary classifiers + UMAP visualisation)
-2_pKi_regression_model/  (pKi regression models)
-3_Selectivity_model/ (selectivity ML, UMAP) 
-4_Prediction_new_SMILES/ (unified inference for novel molecules)
+0. Cleaned_data/ (input CSV files per receptor)
+1. Binary_activity_models/ (binary classifiers + UMAP visualisation)
+2. pKi_regression_model/  (pKi regression models)
+3. Selectivity_model/ (selectivity ML, UMAP) 
+4. Prediction_new_SMILES/ (unified inference for novel molecules)
 
 
 | Folder | Main Notebooks | Key Outputs |
