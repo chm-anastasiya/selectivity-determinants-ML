@@ -1,8 +1,8 @@
-Binary Activity Models – 5-HT Receptor Panel
+# Binary Activity Models – 5-HT Receptor Panel
 
 This directory contains two Jupyter notebooks that train and analyse binary (active / inactive) classification models for six serotonin receptors (5-HT1A, 5-HT2A, 5-HT2B, 5-HT5A, 5-HT6, 5-HT7).
 
-Notebooks
+# Notebooks
 ---------
 1. binary_activity_all_receptors.ipynb
 - trains LightGBM classifiers (active = Ki < 1000 nM);
@@ -16,12 +16,12 @@ Notebooks
 
 
 
-Input
+# Input
 -----
 Cleaned ligand tables for each receptor  
 (`cleaned_5HT1A.csv`, `cleaned_5HT2A.csv`, …) containing SMILES, Ki and RDKit descriptors.
 
-Output
+# Output
 ------
 results/<receptor>/
 ├── roc_curve.png
