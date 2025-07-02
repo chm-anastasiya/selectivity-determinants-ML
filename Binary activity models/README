@@ -10,9 +10,9 @@ Notebooks
 - saves metrics, curves, feature rankings and model.pkl files under results/<receptor>/.
 
 2. UMAP_activity_classification_all_receptors.ipynb
-projects the same feature space with UMAP;
-produces 2-D plots coloured by activity class;
-files are written to figs/UMAP_<receptor>.png.
+- projects the same feature space with UMAP;
+- produces 2-D plots coloured by activity class;
+- files are written to figs/UMAP_<receptor>.png.
 
 
 
