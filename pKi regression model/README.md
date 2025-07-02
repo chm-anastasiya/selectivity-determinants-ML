@@ -38,3 +38,4 @@ Quick start
 1. Open **`pKi_regression_all_receptors.ipynb`**.  
 2. Set `CSV_DIR` to the folder with the cleaned CSV files.  
 3. Run all cells to train the models and generate the results.
+
