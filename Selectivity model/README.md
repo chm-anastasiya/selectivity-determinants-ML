@@ -33,15 +33,12 @@ Input data
 Output structure
 ----------------
 
-results/selectivity/
-├── delta_pKi_matrix.csv
-├── top_selective_ligands.csv
-├── selectivity_heatmap.png
-└── ΔpKi_histograms/
-
-results/selectivity_models/
+2. results/selectivity_models/
 * <pair>_confusion_matrix.png
 * <pair>_roc_curve.png
 * <pair>_metrics.json
 * <pair>_top_features.csv
 * <pair>_model.pkl
+
+3. figs/UMAP_selectivity/
+* UMAP_<pair>.png
