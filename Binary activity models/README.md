@@ -17,14 +17,15 @@ Notebooks
 
 
 
-Input
------
-Cleaned CSV files for each receptor
+Input data
+----------
+
+Cleaned CSV files for each receptor in `Cleaned_data/`
 (`cleaned_5HT1A.csv`, `cleaned_5HT2A.csv`, …) containing SMILES, Ki and
 RDKit descriptors.
 
-Output
-------
+Output structure
+----------------
 results/<receptor>/
 - roc_curve.png
 - pr_curve.png
@@ -38,8 +39,9 @@ figs/
 Quick start
 -----------
 
-1. Open **`binary_activity_all_receptors.ipynb`**, set `CSV_DIR`
-   to the folder with the cleaned CSV files and run all cells.  
-2. Open **`UMAP_activity_classification_all_receptors.ipynb`** and run all
-   cells to generate the UMAP plots.
+1. Run **`binary_activity_all_receptors.ipynb`** to train the models.
+2. Run **`UMAP_activity_classification_all_receptors.ipynb`** to create the UMAP plots.
 
+   
+These `.pkl` files are later loaded automatically by the **Selectivity model**
+and **Prediction for new SMILES** notebooks.
