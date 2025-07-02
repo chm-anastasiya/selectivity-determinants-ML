@@ -13,9 +13,9 @@ Notebook
 * Features: ECFP4 fingerprints (radius = 2, 1024 bits) + RDKit descriptors  
 * Target: pKi = –log₁₀(Ki [M])  
 * Model: LightGBM regressor, 5-fold cross-validation, Optuna
-  hyper-parameter search  
+  hyper-parameter search 
 * Outputs per receptor: R², RMSE, MAE, scatter/residual plots,
-  ranked feature list, `model.pkl`
+  ranked feature list, `model.pkl`.
 
 Input data
 ----------
@@ -28,12 +28,8 @@ Output structure
 ----------------
 results/<receptor>/
 
-├── true_vs_pred_scatter.png
-
-├── residuals_hist.png
-
-├── metrics.json # R2, RMSE, MAE
-
-├── feature_importances.csv
-
-└── model.pkl
+- true_vs_pred_scatter.png
+- residuals_hist.png
+- metrics.json # R2, RMSE, MAE
+- feature_importances.csv
+-  model.pkl
