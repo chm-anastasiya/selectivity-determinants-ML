@@ -29,6 +29,9 @@ Output structure
 results/<receptor>/
 ├── true_vs_pred_scatter.png
 ├── residuals_hist.png
+
 ├── metrics.json # R2, RMSE, MAE
+
 ├── feature_importances.csv
+
 └── model.pkl
