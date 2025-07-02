@@ -22,11 +22,12 @@ Folder Structure
 
 | Folder | Main Notebooks | Key Outputs |
 |--------|----------------|-------------|
-| **Cleaned_data** | – | `cleaned_5HT*.csv` |
-| **Binary_activity_models** | `binary_activity_all_receptors.ipynb`<br>`UMAP_activity_classification_all_receptors.ipynb` | `results/<receptor>/` ROC/PR curves, feature lists, `model.pkl`<br>`figs/UMAP_<receptor>.png` |
-| **pKi_regression_model** | `pKi_regression_all_receptors.ipynb` | `results/<receptor>/` R² / RMSE / MAE, scatter & residual plots, `model.pkl` |
-| **Selectivity_model** | `common_smiles.ipynb`<br>`selectivity_models.ipynb`<br>`UMAP_selevcitvity.ipynb` | `results/selectivity/` Δ*p*Ki matrix & heat-maps<br>`results/selectivity_models/` pair-wise classifiers<br>`figs/UMAP_selectivity/` selectivity clusters |
-| **Prediction_new_SMILES** | `prediction_P(active)_Ki_ΔpKi.ipynb` | `results/prediction/predictions.csv` (P(active), *p*Ki, Δ*p*Ki)<br>`prediction_overview.png` |
+| **0_Cleaned_data** | – | `cleaned_5HT*.csv` |
+| **1_Binary_activity_models** | `binary_activity_all_receptors.ipynb`<br>`UMAP_activity_classification_all_receptors.ipynb` | `results/<receptor>/` ROC/PR curves, feature lists, `model.pkl`<br>`figs/UMAP_<receptor>.png` |
+| **2_pKi_regression_model** | `pKi_regression_all_receptors.ipynb` | `results/<receptor>/` R² / RMSE / MAE, scatter & residual plots, `model.pkl` |
+| **3_Selectivity_model** | `common_smiles.ipynb`<br>`selectivity_models.ipynb`<br>`UMAP_selevcitvity.ipynb` | `results/selectivity_models/` pair-wise classifiers<br>`figs/UMAP_selectivity/` selectivity clusters |
+| **4_Prediction_new_SMILES** | `prediction_P(active)_Ki_ΔpKi.ipynb` | `results/prediction/predictions.csv` (P(active), *p*Ki, Δ*p*Ki)<br>`prediction_overview.png` |
+
 
 ---
 
@@ -58,10 +59,3 @@ Each folder contains a local README with concise, notebook-level instructions.
   numpy, tqdm, umap-learn, matplotlib, shape.
 
 pip install -r requirements.txt
-
-## Running the Pipeline
-
-.
-
-
-All models, metrics and figures are saved under results/ and figs/.
