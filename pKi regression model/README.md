@@ -12,13 +12,13 @@ Notebook
 
 * trains LightGBM regressors to predict pKi (–log₁₀ Ki);  
 * uses ECFP4 fingerprints + RDKit descriptors;  
-* saves R² / RMSE / MAE, scatter & residual plots, feature rankings and
+* saves R² / RMSE / MAE, feature rankings and
 `model.pkl` files under results/<receptor>/.
 
 Input data
 ----------
 
-Cleaned CSV files for each receptor  
+Cleaned CSV files for each receptor in `Cleaned_data/`
 (`cleaned_5HT1A.csv`, `cleaned_5HT2A.csv`, …) containing SMILES, Ki and
 RDKit descriptors.
 
@@ -26,16 +26,19 @@ Output structure
 ----------------
 results/<receptor>/
 
-- true_vs_pred_scatter.png
-- residuals_hist.png
-- metrics.json # R2, RMSE, MAE
-- feature_importances.csv
-- model.pkl
+results/<receptor>/
+- LGBM_pKi_<receptor>.pkl       # fitted model
+- scaler_pKi_<receptor>.pkl     # StandardScaler for descriptors
+- metrics.json                  # R², RMSE, MAE (train / CV)
+
 
 Quick start
 -----------
 
-1. Open **`pKi_regression_all_receptors.ipynb`**.  
-2. Set `CSV_DIR` to the folder with the cleaned CSV files.  
-3. Run all cells to train the models and generate the results.
+1. Make sure the six `cleaned_5HT*.csv` files are present in
+   **`Cleaned_data/`**.  
+2. Open **`pKi_regression_all_receptors.ipynb`** and run.  
+3. Trained models and evaluation figures will appear in the `models/` sub-folder.
 
+These `.pkl` files are later loaded automatically by the **Selectivity model**
+and **Prediction for new SMILES** notebooks.
