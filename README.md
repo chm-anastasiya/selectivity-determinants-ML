@@ -15,8 +15,7 @@ for ligands across six serotonin receptors
 ---
 
 ## Folder structure
-Folder Structure
-----------------
+
 0. Cleaned_data/ (input CSV files per receptor)
 1. Binary_activity_models/ (binary classifiers + UMAP visualisation)
 2. pKi_regression_model/  (pKi regression models)
@@ -62,4 +61,3 @@ Each folder contains a local README with concise, notebook-level instructions.
 - rdkit, lightgbm, scikit-learn, optuna, pandas, 
   numpy, tqdm, umap-learn, matplotlib, shape.
 
-pip install -r requirements.txt
