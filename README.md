@@ -50,7 +50,7 @@ for ligands across six serotonin receptors
 5. **Inference on new SMILES**  
    Place your SMILES list in `4_Prediction_new_SMILES/input_smiles.csv` and run the inference notebook.
 
-Each folder contains a local README with concise, notebook-level instructions.
+Each folder contains its own mini-README with notebook-level details.
 
 ---
 
