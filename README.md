@@ -1,7 +1,6 @@
-# selectivity-determinants-ML
+# Selectivity-Determinants-ML
 Machine-learning project for analysing ligand selectivity using ChEMBL data
 
-5-HT Ligand Activity, Affinity and Selectivity Pipeline
 =======================================================
 
 This repository contains a complete, notebook-based workflow for predicting
