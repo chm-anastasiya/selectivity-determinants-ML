@@ -24,23 +24,11 @@ for ligands across six serotonin receptors
 
 | Folder                     | Main notebooks / scripts                                                              | Key outputs                                                                                       |
 |----------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| **0.Cleaned_data**         | –                                                                                     | `cleaned_5HT1A.csv` … `cleaned_5HT7.csv` (SMILES, Ki, RDKit descriptors)                         |
-| **1.Binary_activity_models** | `binary_activity_all_receptors.ipynb`<br>`UMAP_activity_classification_all_receptors.ipynb` | `results/<receptor>/`<br>`model.pkl`, `scaler.pkl`, ROC & PR curves, feature_importances.csv<br>`figs/UMAP_<receptor>.png` |
-| **2_pKi_regression_model**   | `pKi_regression_all_receptors.ipynb`                                                 | `results/<receptor>/`<br>`LGBM_pKi_<receptor>.pkl`, `scaler_pKi_<receptor>.pkl`, `metrics.json`   |
-| **3_Selectivity_model**      | `common_smiles.ipynb`<br>`selectivity_models.ipynb`<br>`UMAP_selevcitvity.ipynb`       | `models/sel/`<br>`meta_<R1>_vs_<R2>.pkl`, `meta_metrics_summary.csv`<br>`umap_plots/UMAP_<…>.png`  |
-| **4_Prediction_new_SMILES**  | `prediction_P(active)_Ki_ΔpKi.ipynb`<br>`compute_Ki_and_selectivity.py`              | `new_predicted_Ki.csv`<br>`new_predicted_Pactive.csv`<br>`new_predicted_selectivity.csv`          |
-
----
-
-
-| Folder | Main Notebooks | Key Outputs |
-|--------|----------------|-------------|
-| **0_Cleaned_data** | – | `cleaned_5HT*.csv` |
-| **1_Binary_activity_models** | `binary_activity_all_receptors.ipynb`<br>`UMAP_activity_classification_all_receptors.ipynb` | `results/<receptor>/` ROC/PR curves, feature lists, `model.pkl`<br>`figs/UMAP_<receptor>.png` |
-| **2_pKi_regression_model** | `pKi_regression_all_receptors.ipynb` | `results/<receptor>/` R² / RMSE / MAE, `model.pkl` |
-| **3_Selectivity_model** | `common_smiles.ipynb`<br>`selectivity_models.ipynb`<br>`UMAP_selevcitvity.ipynb` | `results/selectivity_models/` pair-wise classifiers<br>`figs/UMAP_selectivity/` selectivity clusters |
-| **4_Prediction_new_SMILES** | `prediction_P(active)_Ki_ΔpKi.ipynb` | `results/prediction/predictions.csv` (P(active), *p*Ki, Δ*p*Ki)<br>`prediction_overview.png` |
-
+| **0.Cleaned_data**         | –                                                                                     | `cleaned_5HT1A.csv` …  (SMILES, Ki, RDKit descriptors)                         |
+| **1.Binary_activity_models** | `binary_activity_all_receptors.ipynb`<br>`UMAP_activity_classification_all_receptors.ipynb` | `models/ <models>/`<br>`model.pkl`, `scaler.pkl`, ROC & PR curves, feature_importances.csv<br>`figs/UMAP_<receptor>.png` |
+| **2.pKi_regression_model**   | `pKi_regression_all_receptors.ipynb`                                                 | `results/<receptor>/`<br>`LGBM_pKi_<receptor>.pkl`, `scaler_pKi_<receptor>.pkl`, `metrics.json`   |
+| **3.Selectivity_model**      | `common_smiles.ipynb`<br>`selectivity_models.ipynb`<br>`UMAP_selevcitvity.ipynb`       | `models/sel/`<br>`meta_<R1>_vs_<R2>.pkl`, `meta_metrics_summary.csv`<br>`umap_plots/UMAP_<…>.png`  |
+| **4.Prediction_new_SMILES**  | `prediction_P(active)_Ki_ΔpKi.ipynb`<br>`compute_Ki_and_selectivity.py`              | `new_predicted_Ki.csv`<br>`new_predicted_Pactive.csv`<br>`new_predicted_selectivity.csv`          |
 
 ---
 
@@ -69,4 +57,4 @@ Each folder contains its own mini-README with notebook-level details.
 - Python 3.10+ with the following packages:
 
 - rdkit, lightgbm, scikit-learn, optuna, pandas, 
-  numpy, tqdm, umap-learn, matplotlib, shap.
+  numpy, scipy, seaborn, tqdm, umap-learn, matplotlib, shap.
