@@ -25,7 +25,7 @@ for ligands across six serotonin receptors
 | Folder                     | Main notebooks / scripts                                                              | Key outputs                                                                                       |
 |----------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
 | **0.Cleaned_data**         | –                                                                                     | `cleaned_5HT1A.csv` …  (SMILES, Ki, RDKit descriptors)                         |
-| **1.Binary_activity_models** | `binary_activity_all_receptors.ipynb`<br>`UMAP_activity_classification_all_receptors.ipynb` | `models/ <models>/`<br>`model.pkl`, `scaler.pkl`, ROC & PR curves, top_featurees.csv<br>`figs/UMAP_<receptor>.png` |
+| **1.Binary_activity_models** | `binary_activity_all_receptors.ipynb`<br>`UMAP_activity_classification_all_receptors.ipynb` | `models/ <models>/`<br>`model.pkl`, `scaler.pkl`, ROC & PR curves, top_features.csv<br>`figs/UMAP_<receptor>.png` |
 | **2.pKi_regression_model**   | `pKi_regression_all_receptors.ipynb`                                                 | `/models/pKi/`<br>`LGBM_pKi_<receptor>.pkl`, `scaler_pKi_<receptor>.pkl`    `/results/`<br> `metrics.json`   |
 | **3.Selectivity_model**      | `common_smiles.ipynb`<br>`selectivity_models.ipynb`<br>`UMAP_selevcitvity.ipynb`       | `models/sel/`<br>`meta_<R1>_vs_<R2>.pkl`, `meta_metrics_summary.csv`<br>`umap_plots/UMAP_<…>.png`  |
 | **4.Prediction_new_SMILES**  | `prediction_P(active)_Ki_ΔpKi.ipynb`| `new_predicted_Ki.csv`<br>`new_predicted_Pactive.csv`<br>`new_predicted_selectivity.csv`          |
@@ -44,7 +44,7 @@ for ligands across six serotonin receptors
    Execute notebooks in `Selectivity_model/` **in this order**:  
    1. `common_smiles`;
    2. `selectivity_models`;
-   3. `UMAP_selevcitvity`.
+   3. `UMAP_selectivity`.
 5. **Inference on new SMILES**  
    Place your SMILES list in `Prediction_new_SMILES/input_smiles.csv` and run the inference notebook.
 
@@ -56,11 +56,9 @@ Each folder contains its own mini-README with notebook-level details.
 
 1. **Install Miniconda (or Anaconda)** <br>
    Download the installer from <https://docs.conda.io/en/latest/miniconda.html> and follow the setup guide.
-   
-3. **Clone this repository** <br>
+2. **Clone this repository** <br>
    git clone https://github.com/chm-anastasiya/selectivity-determinants-ML.git <br>
    cd selectivity-determinants-ML
-     
-5. **Create and activate the Conda environment** <br>
+3. **Create and activate the Conda environment** <br>
    conda env create -f environment.yml <br>
    conda activate selectivity-ml
