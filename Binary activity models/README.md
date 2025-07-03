@@ -35,12 +35,13 @@ Binary activity models/ models/
 results/
 - oof_pred_<receptor>.npy (out-of-fold probabilities)
 - y_<receptor>.npy (true labels for OOF)
+
 results/<receptor>/
 - roc_curve.png
 - pr_curve.png
 - confusion_matrix
 - top_features.csv
-- top_bits_fragments.csv
+- top_bits_fragments.html
   
 figs/
 - UMAP_<receptor>.png
