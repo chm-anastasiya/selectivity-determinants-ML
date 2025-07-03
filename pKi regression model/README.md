@@ -12,7 +12,7 @@ Notebook
 * trains LightGBM regressors to predict pKi (–log₁₀ Ki);  
 * uses ECFP4 fingerprints + RDKit descriptors;  
 * saves R² / RMSE / MAE, feature rankings and
-`model.pkl` files under results/<receptor>/.
+`model.pkl` files under results/'receptor'/.
 
 Input
 -----
