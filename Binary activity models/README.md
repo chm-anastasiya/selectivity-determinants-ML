@@ -17,30 +17,37 @@ Notebooks
 
 
 
-Input data
-----------
+Input
+-----
 
 Cleaned CSV files for each receptor in `Cleaned_data/`
 (`cleaned_5HT1A.csv`, `cleaned_5HT2A.csv`, …) containing SMILES, Ki and
 RDKit descriptors.
 
-Output structure
-----------------
+Output
+------
+Binary activity models/ models/
+- LGBM_ECFP_RDKit_5HT1A.pkl
+- scaler_5HT1A.pkl
+-… # one pair per receptor
+- metrics_summary.csv (ROC-AUC, F1, MCC, Precision, Recall)
+  
 results/<receptor>/
+- oof_pred_<receptor>.npy (out-of-fold probabilities)
+- y_<receptor>.npy (true labels for OOF)
 - roc_curve.png
 - pr_curve.png
-- confusion_matrix.png
-- top_features.csv
-- model.pkl
-
+- feature_importances.csv
+  
 figs/
 - UMAP_<receptor>.png
 
 Quick start
 -----------
 
-1. Run **`binary_activity_all_receptors.ipynb`** to train the models.
-2. Run **`UMAP_activity_classification_all_receptors.ipynb`** to create the UMAP plots.
+1. Verify that the six `cleaned_5HT*.csv` files are present in `Cleaned_data/`.   
+2. Run **`binary_activity_all_receptors.ipynb`** to train the models.
+3. Run **`UMAP_activity_classification_all_receptors.ipynb`** to create the UMAP plots.
 
    
 These `.pkl` files are later loaded automatically by the **Selectivity model**
