@@ -1,0 +1,29 @@
+name: selectivity-determinants-ML
+channels:
+  - pyg
+  - pytorch
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - pip=25.0.1
+  - numpy=1.26.4
+  - pandas=2.1.4
+  - scipy=1.15.2
+  - scikit-learn=1.6.1
+  - lightgbm=4.0.0
+  - optuna=3.3.0
+  - rdkit=2023.09.6
+  - umap-learn=0.5.4
+  - shap=0.42.0
+  - matplotlib=3.10.1
+  - seaborn=0.13.2
+  - tqdm=4.67.1
+  - jupyterlab=4.1.0
+  - ipykernel=6.28.1
+  - pytest=8.5.2
+  - nbval=0.9.6
+  - black=25.1.0
+  - flake8=6.1.0
+  - isort=6.10.0
