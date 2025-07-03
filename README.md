@@ -54,10 +54,17 @@ Each folder contains its own mini-README with notebook-level details.
 
 ## Environment
 
-1. **Install Miniconda (or Anaconda)** <br>
-   Download the installer from <https://docs.conda.io/en/latest/miniconda.html> and follow the setup guide.
-3. **Clone this repository** <br>
-   git clone https://github.com/chm-anastasiya/selectivity-determinants-ML.git <br>
+1. **Install Miniconda (or Anaconda)**  
+   Get the installer from <https://docs.conda.io/en/latest/miniconda.html> and follow the setup guide.
+
+2. **Clone this repository**  
+   ```bash
+   git clone https://github.com/chm-anastasiya/selectivity-determinants-ML.git
    cd selectivity-determinants-ML
-4. **Create and activate the Conda environment** <br>
+   ```
+
+3. **Create and activate the Conda environment**  
+   ```bash
    conda env create -f environment.yml
+   conda activate selectivity-ml
+   ```
