@@ -27,11 +27,11 @@ pKi regression model/
 - metrics.json                  (R², RMSE, MAE (train / CV))
 
 pKi regression model/models/pKi/
-- LGBM_pKi_<receptor>.pkl       (fitted model)
-- scaler_pKi_<receptor>.pkl     (StandardScaler for descriptors)
+- LGBM_pKi_'receptor'.pkl       (fitted model)
+- scaler_pKi_'receptor'.pkl     (StandardScaler for descriptors)
 
 pKi regression model/results/
-- oof_pred_<receptor>.npy
+- oof_pred_'receptor'.npy
 
 Quick start
 -----------
