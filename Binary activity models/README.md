@@ -8,7 +8,7 @@ Notebooks
 1. **`binary_activity_all_receptors.ipynb`**
 * trains LightGBM classifiers (active = Ki < 1000 nM);
 * uses ECFP4 fingerprints + RDKit descriptors;
-* saves metrics, curves, feature rankings and model.pkl files under results/<receptor>/.
+* saves metrics, curves, feature rankings and model.pkl files.
 
 2. **`UMAP_activity_classification_all_receptors.ipynb`**
 * projects the same feature space with UMAP;
