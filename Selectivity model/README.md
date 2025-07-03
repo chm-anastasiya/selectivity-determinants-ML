@@ -34,6 +34,7 @@ Output
 models/sel/
 - meta_<R1>vs<R2>.pkl (15 LightGBM meta-models)
 - meta_metrics_summary.csv (R² / MAE per pair)
+
 umap_plots/
 -  UMAP_selectivity_<…>.png
 
