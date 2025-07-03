@@ -28,7 +28,7 @@ for ligands across six serotonin receptors
 | **1.Binary_activity_models** | `binary_activity_all_receptors.ipynb`<br>`UMAP_activity_classification_all_receptors.ipynb` | `models/ <models>/`<br>`model.pkl`, `scaler.pkl`, ROC & PR curves, feature_importances.csv<br>`figs/UMAP_<receptor>.png` |
 | **2.pKi_regression_model**   | `pKi_regression_all_receptors.ipynb`                                                 | `results/<receptor>/`<br>`LGBM_pKi_<receptor>.pkl`, `scaler_pKi_<receptor>.pkl`, `metrics.json`   |
 | **3.Selectivity_model**      | `common_smiles.ipynb`<br>`selectivity_models.ipynb`<br>`UMAP_selevcitvity.ipynb`       | `models/sel/`<br>`meta_<R1>_vs_<R2>.pkl`, `meta_metrics_summary.csv`<br>`umap_plots/UMAP_<…>.png`  |
-| **4.Prediction_new_SMILES**  | `prediction_P(active)_Ki_ΔpKi.ipynb`<br>`compute_Ki_and_selectivity.py`              | `new_predicted_Ki.csv`<br>`new_predicted_Pactive.csv`<br>`new_predicted_selectivity.csv`          |
+| **4.Prediction_new_SMILES**  | `prediction_P(active)_Ki_ΔpKi.ipynb`| `new_predicted_Ki.csv`<br>`new_predicted_Pactive.csv`<br>`new_predicted_selectivity.csv`          |
 
 ---
 
