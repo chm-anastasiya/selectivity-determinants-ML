@@ -12,7 +12,7 @@ Notebook
 * trains LightGBM regressors to predict pKi (–log₁₀ Ki);  
 * uses ECFP4 fingerprints + RDKit descriptors;  
 * saves R² / RMSE / MAE, feature rankings and
-`model.pkl` files under results/'receptor'/.
+`model.pkl` files under models/pKi/.
 
 Input
 -----
@@ -23,7 +23,7 @@ RDKit descriptors.
 
 Output
 ------
-results/'receptor'/
+models/pKi/
 - LGBM_pKi_<receptor>.pkl       (fitted model)
 - scaler_pKi_<receptor>.pkl     (StandardScaler for descriptors)
 - metrics.json                  (R², RMSE, MAE (train / CV))
@@ -34,7 +34,7 @@ Quick start
 
 1. Verify that the six `cleaned_5HT*.csv` files are present in `Cleaned_data/`.  
 2. Run **`pKi_regression_all_receptors.ipynb`** to train the models.  
-3. Trained models and metrics will appear in the `results/<receptor>/`
+3. Trained models and metrics will appear in the `rmodels/pKi/`
    folders.
    
 These `.pkl` files are later loaded automatically by the **Selectivity model**
