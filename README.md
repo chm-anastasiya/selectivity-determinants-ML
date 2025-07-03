@@ -54,7 +54,7 @@ Each folder contains its own mini-README with notebook-level details.
 
 ## Environment
 
-1. **Install Miniconda (or Anaconda)**
+1. **Install Miniconda (or Anaconda)** <br>
    Download the installer from <https://docs.conda.io/en/latest/miniconda.html> and follow the setup guide.
 3. **Clone this repository** <br>
    git clone https://github.com/chm-anastasiya/selectivity-determinants-ML.git <br>
