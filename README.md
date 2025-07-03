@@ -54,9 +54,17 @@ Each folder contains its own mini-README with notebook-level details.
 
 ## Environment
 
-1. Make sure you have Conda installed (Miniconda or Anaconda).
-2. In the project root you’ll find `environment.yml`.
-3. To create and activate the environment, run:
-
-   conda env create -f environment.yml
-   conda activate selectivity-ml
+1. **Install Miniconda (or Anaconda)**  
+   Download the installer from <https://docs.conda.io/en/latest/miniconda.html> and follow the setup guide.
+   
+3. **Clone this repository**  
+    ```bash
+    git clone https://github.com/chm-anastasiya/selectivity-determinants-ML.git
+    cd selectivity-determinants-ML
+    ```
+     
+4. **Create and activate the Conda environment**  
+    ```bash
+    conda env create -f environment.yml
+    conda activate selectivity-ml
+    ```
