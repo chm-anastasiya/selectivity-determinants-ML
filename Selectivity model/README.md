@@ -44,4 +44,4 @@ Quick start
 2. Run **`selectivity_models.ipynb`** to train and save meta‐models.  
 3. Run **`UMAP_selevcitvity.ipynb`** to visualise selectivity clusters.
 
-The `.pkl` files are later loaded automatically by the**Prediction for new SMILES** notebooks.
+The `.pkl` files are later loaded automatically by the **Prediction for new SMILES** notebooks.
