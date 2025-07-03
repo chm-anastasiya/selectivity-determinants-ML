@@ -36,7 +36,7 @@ results/
 - oof_pred_<receptor>.npy (out-of-fold probabilities)
 - y_<receptor>.npy (true labels for OOF)
 
-results/<receptor>/
+results/'receptor'/
 - roc_curve.png
 - pr_curve.png
 - confusion_matrix
