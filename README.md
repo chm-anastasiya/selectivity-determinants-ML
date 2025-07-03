@@ -19,7 +19,7 @@ for ligands across six serotonin receptors
 0. Cleaned_data/ (input CSV files per receptor)
 1. Binary_activity_models/ (binary classifiers + UMAP visualisation)
 2. pKi_regression_model/  (pKi regression models)
-3. Selectivity_model/ (selectivity models + UMAP) 
+3. Selectivity_model/ (selectivity models + UMAP visualisation) 
 4. Prediction_new_SMILES/ (unified inference for novel molecules)
 
 
@@ -39,16 +39,16 @@ for ligands across six serotonin receptors
 1. **Data preparation**  
    Ensure `cleaned_5HT*.csv` are present in `0_Cleaned_data/`.
 2. **Binary activity models**  
-   Run both notebooks in `1_Binary_activity_models/`.
+   Run both notebooks in `Binary_activity_models/`.
 3. **pKi regression models**  
-   Run the notebook in `2_pKi_regression_model/`.
+   Run the notebook in `pKi_regression_model/`.
 4. **Selectivity analysis**  
-   Execute notebooks in `3_Selectivity_model/` **in this order**:  
+   Execute notebooks in `Selectivity_model/` **in this order**:  
    1. `common_smiles`;
    2. `selectivity_models`;
    3. `UMAP_selevcitvity`.
 5. **Inference on new SMILES**  
-   Place your SMILES list in `4_Prediction_new_SMILES/input_smiles.csv` and run the inference notebook.
+   Place your SMILES list in `Prediction_new_SMILES/input_smiles.csv` and run the inference notebook.
 
 Each folder contains its own mini-README with notebook-level details.
 
@@ -60,4 +60,3 @@ Each folder contains its own mini-README with notebook-level details.
 
 - rdkit, lightgbm, scikit-learn, optuna, pandas, 
   numpy, tqdm, umap-learn, matplotlib, shape.
-
