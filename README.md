@@ -37,7 +37,7 @@ for ligands across six serotonin receptors
 ## Quick Workflow
 
 1. **Data preparation**  
-   Ensure `cleaned_5HT*.csv` are present in `0_Cleaned_data/`.
+   Ensure `cleaned_5HT*.csv` are present in `Cleaned_data/`.
 2. **Binary activity models**  
    Run both notebooks in `Binary_activity_models/`.
 3. **pKi regression models**  
