@@ -54,7 +54,9 @@ Each folder contains its own mini-README with notebook-level details.
 
 ## Environment
 
-- Python 3.10+ with the following packages:
+1. Make sure you have Conda installed (Miniconda or Anaconda).
+2. In the project root you’ll find `environment.yml`.
+3. To create and activate the environment, run:
 
-- rdkit, lightgbm, scikit-learn, optuna, pandas, 
-  numpy, scipy, seaborn, tqdm, umap-learn, matplotlib, shap.
+   conda env create -f environment.yml
+   conda activate selectivity-ml
