@@ -32,12 +32,15 @@ Binary activity models/ models/
 -… # one pair per receptor
 - metrics_summary.csv (ROC-AUC, F1, MCC, Precision, Recall)
   
-results/<receptor>/
+results/
 - oof_pred_<receptor>.npy (out-of-fold probabilities)
 - y_<receptor>.npy (true labels for OOF)
+results/<receptor>/
 - roc_curve.png
 - pr_curve.png
-- feature_importances.csv
+- confusion_matrix
+- top_features.csv
+- top_bits_fragments.csv
   
 figs/
 - UMAP_<receptor>.png
