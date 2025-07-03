@@ -23,7 +23,7 @@ RDKit descriptors.
 
 Output
 ------
-results/<receptor>/
+results/'receptor'/
 - LGBM_pKi_<receptor>.pkl       (fitted model)
 - scaler_pKi_<receptor>.pkl     (StandardScaler for descriptors)
 - metrics.json                  (R², RMSE, MAE (train / CV))
